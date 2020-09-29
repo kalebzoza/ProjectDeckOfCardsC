@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		5AD1D7CB2523C6A800196122 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1D7CA2523C6A800196122 /* AppDelegate.m */; };
 		5AD1D7CE2523C6A800196122 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1D7CD2523C6A800196122 /* SceneDelegate.m */; };
-		5AD1D7D12523C6A800196122 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1D7D02523C6A800196122 /* ViewController.m */; };
 		5AD1D7D42523C6A800196122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD1D7D22523C6A800196122 /* Main.storyboard */; };
 		5AD1D7D62523C6AA00196122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD1D7D52523C6AA00196122 /* Assets.xcassets */; };
 		5AD1D7D92523C6AA00196122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD1D7D72523C6AA00196122 /* LaunchScreen.storyboard */; };
 		5AD1D7DC2523C6AA00196122 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1D7DB2523C6AA00196122 /* main.m */; };
+		5AD1D7F52523CCBA00196122 /* KCCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1D7F42523CCBA00196122 /* KCCard.m */; };
+		5AD1D7F92523D8F500196122 /* KCCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1D7F82523D8F500196122 /* KCCardController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,15 @@
 		5AD1D7CA2523C6A800196122 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5AD1D7CC2523C6A800196122 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		5AD1D7CD2523C6A800196122 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		5AD1D7CF2523C6A800196122 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5AD1D7D02523C6A800196122 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5AD1D7D32523C6A800196122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AD1D7D52523C6AA00196122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AD1D7D82523C6AA00196122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AD1D7DA2523C6AA00196122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AD1D7DB2523C6AA00196122 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5AD1D7F32523CCBA00196122 /* KCCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCCard.h; sourceTree = "<group>"; };
+		5AD1D7F42523CCBA00196122 /* KCCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCCard.m; sourceTree = "<group>"; };
+		5AD1D7F72523D8F500196122 /* KCCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCCardController.h; sourceTree = "<group>"; };
+		5AD1D7F82523D8F500196122 /* KCCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCCardController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +64,77 @@
 		5AD1D7C82523C6A800196122 /* DeckOfCards-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				5AD1D7E72523C7CC00196122 /* Model */,
+				5AD1D7E62523C7C500196122 /* Controllers  */,
+				5AD1D7E52523C7C000196122 /* Views */,
+				5AD1D7E32523C7A500196122 /* Resources */,
+			);
+			path = "DeckOfCards-ObjC";
+			sourceTree = "<group>";
+		};
+		5AD1D7E32523C7A500196122 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AD1D7D52523C6AA00196122 /* Assets.xcassets */,
 				5AD1D7C92523C6A800196122 /* AppDelegate.h */,
 				5AD1D7CA2523C6A800196122 /* AppDelegate.m */,
 				5AD1D7CC2523C6A800196122 /* SceneDelegate.h */,
 				5AD1D7CD2523C6A800196122 /* SceneDelegate.m */,
-				5AD1D7CF2523C6A800196122 /* ViewController.h */,
-				5AD1D7D02523C6A800196122 /* ViewController.m */,
-				5AD1D7D22523C6A800196122 /* Main.storyboard */,
-				5AD1D7D52523C6AA00196122 /* Assets.xcassets */,
 				5AD1D7D72523C6AA00196122 /* LaunchScreen.storyboard */,
 				5AD1D7DA2523C6AA00196122 /* Info.plist */,
 				5AD1D7DB2523C6AA00196122 /* main.m */,
 			);
-			path = "DeckOfCards-ObjC";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AD1D7E52523C7C000196122 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AD1D7E82523C7D200196122 /* Storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5AD1D7E62523C7C500196122 /* Controllers  */ = {
+			isa = PBXGroup;
+			children = (
+				5AD1D7EA2523C7E800196122 /* Model Controller  */,
+				5AD1D7E92523C7DE00196122 /* View Controller  */,
+			);
+			path = "Controllers ";
+			sourceTree = "<group>";
+		};
+		5AD1D7E72523C7CC00196122 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5AD1D7F32523CCBA00196122 /* KCCard.h */,
+				5AD1D7F42523CCBA00196122 /* KCCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5AD1D7E82523C7D200196122 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5AD1D7D22523C6A800196122 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5AD1D7E92523C7DE00196122 /* View Controller  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller ";
+			sourceTree = "<group>";
+		};
+		5AD1D7EA2523C7E800196122 /* Model Controller  */ = {
+			isa = PBXGroup;
+			children = (
+				5AD1D7F72523D8F500196122 /* KCCardController.h */,
+				5AD1D7F82523D8F500196122 /* KCCardController.m */,
+			);
+			path = "Model Controller ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +163,7 @@
 		5AD1D7BE2523C6A800196122 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KC;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					5AD1D7C52523C6A800196122 = {
@@ -145,10 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AD1D7D12523C6A800196122 /* ViewController.m in Sources */,
 				5AD1D7CB2523C6A800196122 /* AppDelegate.m in Sources */,
+				5AD1D7F92523D8F500196122 /* KCCardController.m in Sources */,
 				5AD1D7DC2523C6AA00196122 /* main.m in Sources */,
 				5AD1D7CE2523C6A800196122 /* SceneDelegate.m in Sources */,
+				5AD1D7F52523CCBA00196122 /* KCCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTSUF8MAG6;
-				INFOPLIST_FILE = "DeckOfCards-ObjC/Info.plist";
+				INFOPLIST_FILE = "DeckOfCards-ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +374,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTSUF8MAG6;
-				INFOPLIST_FILE = "DeckOfCards-ObjC/Info.plist";
+				INFOPLIST_FILE = "DeckOfCards-ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

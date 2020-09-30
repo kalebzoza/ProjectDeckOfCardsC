@@ -4,14 +4,13 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="LQq-3I-P6r">
             <objects>
-                <viewController id="s20-7F-7H9" sceneMemberID="viewController">
+                <viewController id="s20-7F-7H9" customClass="CardViewController" customModule="DeckOfCards_ObjC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W5N-9A-MAQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +37,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nas-EZ-dRV">
                                 <rect key="frame" x="50" y="806.5" width="314" height="35.5"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="drawCardButtonTapped:" destination="s20-7F-7H9" eventType="touchUpInside" id="O2t-lk-A6c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YSM-ft-hIg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zdO-gq-K8Y" firstAttribute="centerX" secondItem="YSM-ft-hIg" secondAttribute="centerX" id="2xC-9a-wuc"/>
                             <constraint firstItem="YSM-ft-hIg" firstAttribute="bottom" secondItem="Nas-EZ-dRV" secondAttribute="bottom" constant="20" id="4sc-JQ-G9c"/>
@@ -53,15 +55,15 @@
                             <constraint firstItem="zdO-gq-K8Y" firstAttribute="centerY" secondItem="YSM-ft-hIg" secondAttribute="centerY" id="uZ0-iV-ocT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="sUG-uu-sCL" id="DqT-So-dVH"/>
+                        <outlet property="drawCardButton" destination="Nas-EZ-dRV" id="edF-Nz-fFG"/>
+                        <outlet property="suitLabel" destination="ywQ-2d-2d2" id="mDA-1Q-7MY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjK-uQ-cen" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="84" y="-55"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

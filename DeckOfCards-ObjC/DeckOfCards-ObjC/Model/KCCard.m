@@ -13,8 +13,8 @@
 
 - (instancetype)initWithSuit:(NSString *)suit imageString:(NSString *)imageString
 {
-    if (self = [super init]){
-        
+    self = [super init];
+    if (self) {
         _suit = suit;
         _imageString = imageString;
     }

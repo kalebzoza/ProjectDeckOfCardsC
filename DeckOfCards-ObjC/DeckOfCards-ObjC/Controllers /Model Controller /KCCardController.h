@@ -7,15 +7,15 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@class KCCard;
+#import "KCCard.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KCCardController : NSObject
 
-+ (void)drawNewCard:(NSNumber *)numberOfCards completion:(void(^) (NSArray<KCCard *> *cards, NSError *error))completion;
++ (void)drawANewCard:(NSInteger )numberOfCards completion:(void(^) (NSArray<KCCard *> *_Nullable cards))completion;
 
-+ (void) fetchCardImage: (KCCard *)card completion:(void(^) (UIImage *))completion;
++ (void)fetchCardImage: (KCCard *)card completion:(void(^) (UIImage *_Nullable image))completion;
 
 
 

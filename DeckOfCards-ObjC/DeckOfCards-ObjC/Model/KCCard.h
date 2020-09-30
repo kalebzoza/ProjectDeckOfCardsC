@@ -12,7 +12,7 @@
 @interface KCCard : NSObject
 
 @property (nonatomic,copy, readonly) NSString *suit;
-@property (nonatomic,copy, readonly) NSString *imageString;
+@property (nonatomic,copy) NSString *imageString;
 
 -(instancetype) initWithSuit:(NSString *)suit
                        imageString:(NSString *)imageString;
